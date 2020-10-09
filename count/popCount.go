@@ -1,4 +1,3 @@
-//计算uint64数字中有多少个1
 package count
 
 var pc [256]byte
