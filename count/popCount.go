@@ -1,10 +1,11 @@
+//计算uint64数字中有多少个1
 package count
 
 var pc [256]byte
 
 func init(){
 	for i := range pc {
-		pc[i] = pc[i/2] + byte(i&1)
+		pc[i] = pc[i/2] + byte(i&1)      //前7位的个数加上最后一位是否是1，i/2写成i>>1更容易理解
 	}
 }
 
