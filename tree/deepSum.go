@@ -1,11 +1,5 @@
 package tree
 
-type Node struct {
-	Value int
-	Left  *Node
-	Right *Node
-}
-
 func DeepSum(rootNode *Node) map[int]int {
 	ret := make(map[int]int)
 
