@@ -1,9 +1,7 @@
 package tree
 
 func PreOrderTraversal(root *Node) (ret []int) {
-	if root == nil {
-		return
-	}
+
 	var cur, midOrderPre *Node = root, nil
 	for cur != nil {
 		if cur.Left == nil {
